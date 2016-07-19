@@ -26,6 +26,9 @@
         <jackson-core.version>2.7.3</jackson-core.version>
         <jackson-databind.version>2.7.3</jackson-databind.version>
         <junit.version>4.8.2</junit.version>
+
+        <shiro.version>1.2.5</shiro.version>
+
     </properties>
 
 
@@ -144,7 +147,27 @@
                 <artifactId>jackson-databind</artifactId>
                 <version>${jackson-databind.version}</version>
             </dependency>
-
+            <!--shiro-->
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-core</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-ehcache</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-spring</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-web</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -196,7 +219,6 @@
 
         </pluginManagement>
     </build>
-
 
 
 </project>
