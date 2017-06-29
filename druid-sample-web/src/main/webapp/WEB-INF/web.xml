@@ -72,7 +72,7 @@
 
     <servlet-mapping>
         <servlet-name>springMvc</servlet-name>
-        <url-pattern>/twilight/*</url-pattern>
+        <url-pattern>/*</url-pattern>
     </servlet-mapping>
 
     <servlet-mapping>

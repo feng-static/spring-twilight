@@ -8,11 +8,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 
 @Controller
+@RequestMapping("/")
 public class AppController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AppController.class);
@@ -20,19 +22,19 @@ public class AppController {
     @Autowired
     private ProductService productService;
 
-    @RequestMapping("/index")
+    @RequestMapping(value = "index", method = RequestMethod.GET)
     public String hello(ModelMap model) {
         LOGGER.info("---------lalallalala");
         model.addAttribute("message", "Hello ---world!");
         return "hello";
     }
 
-    @RequestMapping("/about")
+    @RequestMapping(value = "about", method = RequestMethod.GET)
     public String about() {
         return "about";
     }
 
-    @RequestMapping("/json")
+    @RequestMapping(value = "json", method = RequestMethod.GET)
     @ResponseBody
     public List<Product> json() {
         return productService.list();
