@@ -1,7 +1,7 @@
-package com.prist.controller;
+package com.perist.controller;
 
-import com.prist.model.Product;
-import com.prist.service.ProductService;
+import com.perist.model.Product;
+import com.perist.service.ProductService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

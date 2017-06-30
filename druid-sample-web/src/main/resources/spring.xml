@@ -6,6 +6,8 @@ http://www.springframework.org/schema/context
 http://www.springframework.org/schema/context/spring-context-3.0.xsd
 ">
 
+    <bean id="t" class="com.perist.test.Test"/>
+
     <context:property-placeholder location="classpath:application.properties" />
 
 </beans>

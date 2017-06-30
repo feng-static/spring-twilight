@@ -1,4 +1,4 @@
-package com.prist;
+package com.perist;
 
 /**
  * @author xiaofeng.huang

@@ -1,6 +1,6 @@
-package com.prist.service;
+package com.perist.service;
 
-import com.prist.model.Product;
+import com.perist.model.Product;
 
 import java.util.List;
 

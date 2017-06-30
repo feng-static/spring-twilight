@@ -1,8 +1,8 @@
-package com.prist.service.impl;
+package com.perist.service.impl;
 
-import com.prist.model.Product;
-import com.prist.mapper.ProductMapper;
-import com.prist.service.ProductService;
+import com.perist.model.Product;
+import com.perist.mapper.ProductMapper;
+import com.perist.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

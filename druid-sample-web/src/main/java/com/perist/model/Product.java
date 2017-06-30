@@ -1,4 +1,4 @@
-package com.prist.model;
+package com.perist.model;
 
 /**
  * 商品领域模型
