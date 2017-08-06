@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD SQL Map Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <settings>
+        <setting name="cacheEnabled" value="false"/>
+        <setting name="defaultExecutorType" value="REUSE"/>
+        <setting name="useGeneratedKeys" value="true"/>
+        <!--
+            自动把create_time 转换成 createTime
+            不需要再添加 as 语句，如在mappers/*.xml文件中：
+            以前使用这样的语句
+            select create_time as createTime from your_table_name;
+            现在使用这样的语句
+            select create_time from your_table_name;
+            没有验证是否有不规则的命名.因此暂时不使用.
+        -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <typeAliases>
+    </typeAliases>
+
+
+    <mappers>
+
+    </mappers>
+
+</configuration>
