@@ -25,7 +25,7 @@
         <mybatis-spring.version>1.2.2</mybatis-spring.version>
         <jackson-core.version>2.7.3</jackson-core.version>
         <jackson-databind.version>2.7.3</jackson-databind.version>
-        <junit.version>4.8.2</junit.version>
+        <junit.version>4.12</junit.version>
 
         <shiro.version>1.2.5</shiro.version>
 

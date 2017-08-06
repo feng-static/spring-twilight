@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.perist.mapper.StockMapper">
+
+    <resultMap id="stock" type="com.perist.model.Stock">
+    </resultMap>
+
+    <select id="findOneByStatus" resultMap="stock">
+        SELECT *
+        FROM stock
+        LIMIT 1;
+    </select>
+
+
+</mapper>
