@@ -12,5 +12,11 @@
         LIMIT 1;
     </select>
 
+    <update id="update">
+        UPDATE
+            stock
+        SET status = 2,version = version +1
+        WHERE id = #{id} and version = ${version}
+    </update>
 
 </mapper>

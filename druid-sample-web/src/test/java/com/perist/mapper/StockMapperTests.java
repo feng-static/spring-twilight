@@ -23,6 +23,13 @@ public class StockMapperTests {
     @Test
     public void test() {
 
-        System.out.println(mapper.findOneByStatus());
+        Stock stock = mapper.findOneByStatus();
+        //do something
+        int matchedRows = 0;
+        do {
+            matchedRows = mapper.update(stock);
+        } while (matchedRows == 0);
+
+
     }
 }

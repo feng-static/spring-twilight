@@ -13,4 +13,5 @@ public interface StockMapper {
 
     Stock findOneByStatus();
 
+    Integer update(Stock stock);
 }
