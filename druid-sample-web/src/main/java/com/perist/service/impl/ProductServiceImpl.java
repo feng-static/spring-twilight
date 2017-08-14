@@ -1,11 +1,11 @@
 package com.perist.service.impl;
 
-import com.perist.model.Product;
 import com.perist.mapper.ProductMapper;
+import com.perist.model.Product;
 import com.perist.service.ProductService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -14,8 +14,12 @@ import java.util.List;
 @Service
 public class ProductServiceImpl implements ProductService {
 
-    @Autowired
     private ProductMapper productMapper;
+
+    @Resource
+    public void setProductMapper(ProductMapper productMapper) {
+        this.productMapper = productMapper;
+    }
 
     @Override
     public List<Product> list() {

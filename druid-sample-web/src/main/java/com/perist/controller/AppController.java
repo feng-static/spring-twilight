@@ -25,6 +25,7 @@ public class AppController {
     @RequestMapping(value = "index", method = RequestMethod.GET)
     public String hello(ModelMap model) {
         LOGGER.info("---------lalallalala");
+        LOGGER.info("{}", productService.list());
         model.addAttribute("message", "Hello ---world!");
         return "hello";
     }
