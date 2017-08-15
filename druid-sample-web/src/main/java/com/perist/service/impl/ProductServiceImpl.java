@@ -3,6 +3,7 @@ package com.perist.service.impl;
 import com.perist.mapper.ProductMapper;
 import com.perist.model.Product;
 import com.perist.service.ProductService;
+import com.perist.test.Test;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -23,6 +24,10 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<Product> list() {
-        return productMapper.list();
+//        return productMapper.list();
+        Test test = new Test();
+        test.setProductMapper(productMapper);
+        return test.test();
     }
+
 }
