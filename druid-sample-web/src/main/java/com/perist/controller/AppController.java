@@ -22,10 +22,13 @@ public class AppController {
     @Autowired
     private ProductService productService;
 
+
+
     @RequestMapping(value = "index", method = RequestMethod.GET)
     public String hello(ModelMap model) {
         LOGGER.info("---------lalallalala");
         LOGGER.info("{}", productService.list());
+        productService.elasticSearch();
         model.addAttribute("message", "Hello ---world!");
         return "hello";
     }

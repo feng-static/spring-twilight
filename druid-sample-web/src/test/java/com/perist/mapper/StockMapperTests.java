@@ -20,6 +20,7 @@ public class StockMapperTests {
     @Resource
     private StockMapper mapper;
 
+
     @Test
     public void test() {
 
@@ -32,4 +33,6 @@ public class StockMapperTests {
 
 
     }
+
+
 }

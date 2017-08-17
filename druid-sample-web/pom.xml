@@ -12,6 +12,20 @@
 
 
     <dependencies>
+        <!--elastic search start-->
+        <dependency>
+            <groupId>com.tujia.tns.order</groupId>
+            <artifactId>search-es</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>slf4j-api</artifactId>
+                    <groupId>org.slf4j</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!--elastic search end-->
+
         <!--spring-->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -92,6 +106,12 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>jcl-over-slf4j</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>slf4j-api</artifactId>
+                    <groupId>org.slf4j</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!--junit-->
