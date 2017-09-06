@@ -26,7 +26,8 @@
         <jackson-core.version>2.7.3</jackson-core.version>
         <jackson-databind.version>2.7.3</jackson-databind.version>
         <junit.version>4.12</junit.version>
-
+        <proto.version>3.3.0</proto.version>
+        <protobuf.java.format.version>1.2</protobuf.java.format.version>
         <shiro.version>1.2.5</shiro.version>
 
     </properties>
@@ -34,6 +35,18 @@
 
     <dependencyManagement>
         <dependencies>
+            <!--proto-->
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>${proto.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.googlecode.protobuf-java-format</groupId>
+                <artifactId>protobuf-java-format</artifactId>
+                <version>${protobuf.java.format.version}</version>
+            </dependency>
+
             <!--spring-->
             <dependency>
                 <groupId>org.springframework</groupId>

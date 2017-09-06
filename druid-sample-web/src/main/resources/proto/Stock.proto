@@ -1,0 +1,15 @@
+//声明proto版本，不声明默认为proto2
+syntax = "proto3";
+package com.perist.proto;
+//股票
+message Stock {
+    //id
+    int64 id = 1;
+    //股票名称
+    string stockName = 2;
+    //股票状态
+    int32 status = 3;
+    //版本号
+    int32 version = 4;
+
+}
