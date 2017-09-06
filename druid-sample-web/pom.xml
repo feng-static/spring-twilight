@@ -12,6 +12,11 @@
 
 
     <dependencies>
+        <dependency>
+            <groupId>com.tujia.tns.order</groupId>
+            <artifactId>search-api</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
         <!--elastic search start-->
         <dependency>
             <groupId>com.tujia.tns.order</groupId>
